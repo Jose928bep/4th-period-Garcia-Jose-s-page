@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+</style>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+<body style="background-color: #ADD8E6"></body>
+</head>
+<body>
+<div id="header">Jose Garcia Website</div>
+<div id="nav">&nbsp;Home<a href="aboutme.html">About Me</a> | <a href="favoritethings.html">Favorite Things</a> | <a href="contactme.html">Contact Me</a> | </div>
+<div>
+
+
+<h2>Welcome to my website!</h2>
+<p>My name is Jose Garcia and I am a web and Graphic designer in Oceanside,CA and I was born and raised in Yuma,AZ. My Favorite things to do when I have free time I like to explore in nature and go on hikes or most of the times I go outside and play soccer with my mom,dad,and last but not least my brother and another thing that we do when we go to the park we play basketball and we do like 2v2 but I just like to go out with friends and family and I also like to play vidoe games like Call of duty my favortie game,Fortnie,roblox,Minecraft,and last but not least roblox.My favorite sport has is soccer but if you are asking yourelf does Jose like Messi or Ronaldo? well I like Messi more that is the answer but roandlo is also good but Messi is just to good but my favorite team is FC Barcelona. I also like football too but I have never played on a team I have played with like with my family and friends but my favorite team is the 49ers but if you have anyquestion please feel free to ask me anymore questions at my Email : 1055240@oside.us&nbsp; &nbsp;&nbsp; </p>
+</div><div style="clear: both;"></div>
+<div class="thirdcolumn">
+  <h3>About Me</h3>
+  <p>My name is Jose Garcia and I am a Web and Graphic designer and I like to make logos for small businesses.</p>
+  <p>Read More...</p>
+</div>
+<div class="thirdcolumn">
+  <h3>Favorite Things</h3>
+  <p>I really enjoy going to the park with my parents and my brother to play soccer and shoot shots&nbsp; &nbsp; </p>
+  <p>Read more...</p>
+</div>
+<div class="thirdcolumn">
+  <h3>Contact</h3>
+  <p>If you really enjoy what is on this website and want to learn more about me or what I do, feel free to go to this page, fill out the form, and let me know.</p>
+  <p>Read more...</p>
+</div>
+<div style="clear: both;"></div>
+<div style="background-color: #034078; color: #e4dfda; text-align: center; padding: 15px;">Copyright &copy; 2025 Jose Garcia</div>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>	
+</body>
+</html>
